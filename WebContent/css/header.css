@@ -1,0 +1,61 @@
+#header-wrap {
+	background: rgba(0, 0, 0, 0) url("../res/topBg.gif") repeat-x scroll 0 0;
+	height: 50px;
+}
+
+#language {
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	font-weight: 900;
+	right: 0;
+	top: 5px;
+}
+
+.cbody {
+	margin: 0 auto;
+	width: 1003px;
+}
+
+ul {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#nav-list li {
+	display: inline
+}
+
+.logout {
+	background-color: green;
+}
+
+#nav-list li a, .logout {
+	float: left;
+	width: 12em;
+	text-decoration: none;
+	color: white;
+	padding: 0.2em 0.6em;
+	border-right: 1px solid white;
+}
+
+#nav-list li a:hover {
+	background-color: green;
+}
+
+.copyright {
+	background: transparent url("../res/endpic.jpg") no-repeat scroll center
+		top;
+	float: left;
+	height: 80px;
+	padding-top: 25px;
+	width: 100%;
+}
+
+div.bottom {
+	position: absolute;
+	bottom: 3px;
+	left: 7.5%;
+}

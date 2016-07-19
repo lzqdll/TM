@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="json" extends="json-default">
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/login.jsp</result>
+		</global-results>
+		<action name="myApplications" class="com.tm.jsonAction.UserGridView">
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="ignoreHierarchy">false</param>
+				<param name="includeProperties">*</param>
+			</result>
+		</action>
+		<action name="OTApplications" class="com.tm.jsonAction.UserGridView">
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="ignoreHierarchy">false</param>
+				<param name="includeProperties">*</param>
+			</result>
+		</action>
+		<action name="managerGridView_userLeaveBalance" class="com.tm.jsonAction.ManagerGridView"
+			method="findUserLeaveBalance">
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="managerGridView" class="com.tm.jsonAction.ManagerGridView">
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+		<action name="HRGridView" class="com.tm.jsonAction.HRGridView">
+			<result name="success" type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>
+		</action>
+	</package>
+</struts>
